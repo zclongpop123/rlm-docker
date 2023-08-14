@@ -17,6 +17,8 @@ RUN  dnf install -y sudo &&\
      echo 'Asia/Shanghai' >/etc/timezone
 
 COPY ./yeti.lic /opt/rlm/yeti.lic
+COPY ./peregrinel.lic /opt/rlm/peregrinel.lic
+COPY ./peregrinel.set /opt/rlm/peregrinel.set
 
 RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &&\
     sed -e 's|ISV fabricinc|ISV fabricinc port=6002|g' -i.bak /opt/rlm/fabricinc.lic &&\
