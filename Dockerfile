@@ -19,6 +19,8 @@ RUN  dnf install -y sudo &&\
 COPY ./yeti.lic /opt/rlm/yeti.lic
 COPY ./peregrinel.lic /opt/rlm/peregrinel.lic
 COPY ./peregrinel.set /opt/rlm/peregrinel.set
+COPY ./zivadyn.lic /opt/rlm/zivadyn.lic
+COPY ./zivadyn.set /opt/rlm/zivadyn.set
 
 RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &&\
     sed -e 's|ISV fabricinc|ISV fabricinc port=6002|g' -i.bak /opt/rlm/fabricinc.lic &&\
@@ -31,7 +33,8 @@ RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &
     sed -e 's|ISV redshift|ISV redshift port=6009|g' -i.bak /opt/rlm/redshift.lic &&\
     sed -e 's|ISV sfx|ISV sfx port=6010|g' -i.bak /opt/rlm/sfx_server.lic &&\
     sed -e 's|ISV solidangle|ISV solidangle port=6011|g' -i.bak /opt/rlm/solidangle.lic &&\
-    sed -e 's|ISV peregrinel|ISV peregrinel port=6012|g' -i.bak /opt/rlm/yeti.lic
+    sed -e 's|ISV peregrinel|ISV peregrinel port=6012|g' -i.bak /opt/rlm/yeti.lic &&\
+    sed -e 's|ISV zivadyn|ISV zivadyn port=6013|g' -i.bak /opt/rlm/zivadyn.lic 
 
 EXPOSE 5053 5054 6001-6015
 
