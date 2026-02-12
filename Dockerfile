@@ -19,6 +19,7 @@ COPY ./peregrinel.lic /opt/rlm/peregrinel.lic
 COPY ./peregrinel.set /opt/rlm/peregrinel.set
 COPY ./zivadyn.lic /opt/rlm/zivadyn.lic
 COPY ./zivadyn.set /opt/rlm/zivadyn.set
+COPY ./genarts.lic /opt/rlm/genarts.lic
 
 RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &&\
     sed -e 's|ISV fabricinc|ISV fabricinc port=6002|g' -i.bak /opt/rlm/fabricinc.lic &&\
