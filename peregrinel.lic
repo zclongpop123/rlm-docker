@@ -1,0 +1,9 @@
+HOST localhost ANY 5053
+ISV peregrinel
+FEATURE peregrinel rlm_server_enable_vm 30 permanent uncounted hostid=ANY sig="3CarGarage"
+LICENSE peregrinel bokeh_i 1.4 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
+LICENSE peregrinel bokeh_r 1.4 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
+LICENSE peregrinel yeti_i 3.0 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
+LICENSE peregrinel yeti_r 3.0 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
+LICENSE peregrinel yeti_i 4.0 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
+LICENSE peregrinel yeti_r 4.0 permanent uncounted issuer="Team AMPED" customer="Team AMPED" hostid=ANY sig="3CarGarage"
