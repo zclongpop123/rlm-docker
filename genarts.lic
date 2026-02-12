@@ -1,0 +1,97 @@
+HOST localhost ANY 5053
+ISV genarts
+FEATURE genarts rlm_server_enable_vm 30 permanent uncounted hostid=any sig="ClownCar"
+
+LICENSE genarts sapphire 20993112.0 permanent uncounted hostid=any options=ae:9 sig="0"
+LICENSE genarts sapphireedge 20993112.0 permanent uncounted hostid=any options=ae:9 sig="0"
+LICENSE genarts sapphireofx 20993112.0 permanent uncounted hostid=any sig="0"
+LICENSE genarts sapphire 20993112.0 permanent uncounted hostid=any sig="any" options=ofx:9
+LICENSE genarts sapphire 20993112.0 permanent uncounted hostid=any sig="zyx" options=ae:9
+LICENSE genarts sapphire 20993112.0 permanent uncounted hostid=any sig="user" options=avx:9
+LICENSE genarts sapphire_ae_ofx_sparks_avx_104 20240417 permanent uncounted hostid=any options=ae:9,avx:9,ofx:9,+ps:9
+
+LICENSE genarts bccfcp 20993112.0 permanent uncounted hostid=ANY sig="ClownCar"
+LICENSE genarts bccfcpmulti 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccfcpmultirender 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccfcprender 20993112.0 permanent uncounted hostid=ANY
+
+LICENSE genarts bccae 20993112.0 permanent uncounted hostid=ANY sig="ClownCar"
+LICENSE genarts bccaemulti 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccaemultirender 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccaerender 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccavxmulti 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunit3do 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitartlooks 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitbeautystudio 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitblursharpen 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitcolortone 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitfilmstyle 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitflickerfixer 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitimagerestoration 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitkeyblend 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitlensflare 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitlights 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitmagicsharp 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitmatchmove 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitmotionblur 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitopticalflow 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitpanzoom 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitparticleemitter 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitparticleillusion 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitparticles 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitperspective 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitprimattestudio 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitstabilize 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitstagelight 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitstylize 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunittexture 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunittime 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunittitlestudio 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunittransitions 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunituprez 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitvr 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitwarp 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitwitnessprotection 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitopticaldiffusion 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts bccunitgradstints 20993112.0 permanent uncounted hostid=ANY
+
+LICENSE genarts bccofx 20993112.0 permanent uncounted hostid= ANY
+LICENSE genarts bundlemultihost-bcc-mocha-sapphire-r1 20993112.0 permanent uncounted hostid= ANY
+LICENSE genarts bfxsuite 20993112.0 permanent uncounted hostid=ANY options=ae:9,fpc:9,ofx:9,+ps:9
+
+LICENSE genarts mochapro 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochaPro_plugin 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochaVR_plugin 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mp-sapphire 20993112 permanent uncounted hostid=ANY
+LICENSE genarts mpp 20993112 permanent uncounted hostid=ANY
+LICENSE genarts mpp-adobe 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mpp-multihost 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mpp-multihost-so 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts -mocha- 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochac4d 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.soho 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.adjusttrack 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.image 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.track 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.python 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.update 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.core 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.remove 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.matte 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.stable 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.grain 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.lens 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.primatte 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.layerfx 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.mv 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.imp5 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.patch 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts mochapro.warper 20993112.0 permanent uncounted hostid=ANY
+
+LICENSE genarts silhouette 20993112.0 permanent uncounted hostid=ANY
+LICENSE genarts sipaint-ae 20993112.0 permanent uncounted hostid=ANY options=ae:9,avx:9,ofx:9
+LICENSE genarts sipaint-ofx 20993112.0 permanent uncounted hostid=ANY options=ae:9,avx:9,ofx:9
+
+LICENSE genarts optics 20993112.0 permanent uncounted hostid=ANY
+
+LICENSE genarts crumplepop_all_gui 20383112 permanent uncounted hostid=ANY
