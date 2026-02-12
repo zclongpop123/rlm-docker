@@ -8,7 +8,7 @@ RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
 
 COPY ./RLM_Linux-64 /tmp/RLM_Linux-64
 
-RUN  dnf install -y sudo &&\
+RUN  dnf install -y sudo libxcrypt-compat &&\
      cd /tmp/RLM_Linux-64 &&\
      chmod +x rlm_install.sh &&\
      ./rlm_install.sh &&\
@@ -34,10 +34,10 @@ RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &
     sed -e 's|ISV peregrinel|ISV peregrinel port=6012|g' -i.bak /opt/rlm/yeti.lic &&\
     sed -e 's|ISV zivadyn|ISV zivadyn port=6013|g' -i.bak /opt/rlm/zivadyn.lic 
 
-ENV TZ Asia/Shanghai
+ENV TZ=Asia/Shanghai
 
 EXPOSE 5053 5054 6001-6015
 
 WORKDIR /opt/rlm
 
-ENTRYPOINT ["./rlm", "-c", "./solidangle.lic"]
+ENTRYPOINT ["./rlm", "-c", "./solidangle.lic"
