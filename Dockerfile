@@ -1,20 +1,18 @@
-FROM rockylinux:8
+FROM rockylinux:10
 
 RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
     -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.aliyun.com/rockylinux|g' \
     -i.bak \
-    /etc/yum.repos.d/[Rr]ocky*.repo &&\
+    /etc/yum.repos.d/rocky*.repo &&\
     dnf makecache
 
-COPY ./RLM_Linux-64 /root/RLM_Linux-64
+COPY ./RLM_Linux-64 /tmp/RLM_Linux-64
 
 RUN  dnf install -y sudo &&\
-     cd /root/RLM_Linux-64 &&\
+     cd /tmp/RLM_Linux-64 &&\
      chmod +x rlm_install.sh &&\
      ./rlm_install.sh &&\
-     rm -rf /root/RLM_Linux-64 &&\
-     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
-     echo 'Asia/Shanghai' >/etc/timezone
+     rm -rf /tmp/RLM_Linux-64
 
 COPY ./yeti.lic /opt/rlm/yeti.lic
 COPY ./peregrinel.lic /opt/rlm/peregrinel.lic
@@ -35,6 +33,8 @@ RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &
     sed -e 's|ISV solidangle|ISV solidangle port=6011|g' -i.bak /opt/rlm/solidangle.lic &&\
     sed -e 's|ISV peregrinel|ISV peregrinel port=6012|g' -i.bak /opt/rlm/yeti.lic &&\
     sed -e 's|ISV zivadyn|ISV zivadyn port=6013|g' -i.bak /opt/rlm/zivadyn.lic 
+
+ENV TZ Aisa/Shanghai
 
 EXPOSE 5053 5054 6001-6015
 
