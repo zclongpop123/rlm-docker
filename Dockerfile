@@ -34,7 +34,7 @@ RUN sed -e 's|ISV foundry|ISV foundry port=6001|g' -i.bak /opt/rlm/foundry.lic &
     sed -e 's|ISV peregrinel|ISV peregrinel port=6012|g' -i.bak /opt/rlm/yeti.lic &&\
     sed -e 's|ISV zivadyn|ISV zivadyn port=6013|g' -i.bak /opt/rlm/zivadyn.lic 
 
-ENV TZ Aisa/Shanghai
+ENV TZ Asia/Shanghai
 
 EXPOSE 5053 5054 6001-6015
 
