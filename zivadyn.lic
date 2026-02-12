@@ -1,0 +1,8 @@
+HOST localhost ANY 5053
+ISV zivadyn
+FEATURE zivadyn rlm_server_enable_vm 30 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
+LICENSE zivadyn ziva-vfx-author 99.0 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
+LICENSE zivadyn ziva-vfx-batch 99.0 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
+LICENSE zivadyn ziva-realtime 99.0 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
+LICENSE zivadyn ziva-rt-player 99.0 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
+LICENSE zivadyn zoa-cheetah-demo 99.0 31-dec-2099 999 hostid=ANY issuer="Team AMPED" customer="Team AMPED" sig="AMPEDMuscleMen"
