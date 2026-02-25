@@ -23,7 +23,7 @@ COPY ./genarts.lic /opt/rlm/genarts.lic
 
 RUN port=6001; \
     for product in foundry fabricinc genarts golaem innobright mootzoid nextlimit peregrinel redshift sfx solidangle peregrinel zivadyn; do \
-        sed -i.bak "s|ISV ${product}|ISV ${product} port=${port}|g" /opt/rlm/${product}.lic; \
+        sed -i "s|ISV ${product}|ISV ${product} port=${port}|g" /opt/rlm/${product}.lic; \
         port=$((port + 1)); \
     done
 
