@@ -33,4 +33,4 @@ EXPOSE 5053 5054 6001-6015
 
 WORKDIR /opt/rlm
 
-ENTRYPOINT ["./rlm", "-c", "./solidangle.lic"]
+CMD ["./rlm", "-c", "./solidangle.lic"]
