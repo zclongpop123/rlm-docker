@@ -1,0 +1,13 @@
+services:
+    rlm:
+        container_name: RLM_SERVER
+  
+        image: rlm-server:latest
+        restart: unless-stopped
+  
+        environment:
+            TZ: "Asia/Shanghai"
+  
+        ports:
+            - "5053-5054:5053-5054"
+            - "6001-6015:6001-6015"
