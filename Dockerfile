@@ -4,11 +4,11 @@ RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
     -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.aliyun.com/rockylinux|g' \
     -i.bak \
     /etc/yum.repos.d/rocky*.repo &&\
-    dnf makecache
+    microdnf makecache
 
 COPY ./RLM_Linux-64 /tmp/RLM_Linux-64
 
-RUN  dnf install -y sudo libxcrypt-compat &&\
+RUN  microdnf install -y sudo libxcrypt-compat &&\
      cd /tmp/RLM_Linux-64 &&\
      chmod +x rlm_install.sh &&\
      ./rlm_install.sh &&\
