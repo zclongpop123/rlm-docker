@@ -1,4 +1,4 @@
-FROM rockylinux/rockylinux:10.2-minimal
+FROM rockylinux/rockylinux:10-minimal
 
 RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
     -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.aliyun.com/rockylinux|g' \
